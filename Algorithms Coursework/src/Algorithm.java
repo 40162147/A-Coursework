@@ -14,7 +14,8 @@ public class Algorithm
 		//fName = "src/berlin52.tsp";
 		//fName = "src/rl5915.tsp";
 		//fName = "src/rl5934.tsp";
-		fName = "src/rl11849.tsp";
+		//fName = "src/rl11849.tsp";
+		fName = "src/rl1304.tsp";
 		
 		//get current time in milliseconds
 		double startTime = System.currentTimeMillis();
@@ -27,8 +28,8 @@ public class Algorithm
 		System.out.println(cities.size());
 
 		//Algorithms
-		ArrayList<Point2D> result = NearestNeighbour.Nneighbour(cities);
-		//ArrayList<Point2D> result = HighLowAlgorithm.HLA(cities);
+		//ArrayList<Point2D> result = NearestNeighbour.Nneighbour(cities);
+		ArrayList<Point2D> result = HighLowAlgorithm.HLA(cities);
 		//ArrayList<Point2D> result = SmallestPoint.SP(cities);
 		
 		//get current time in milliseconds
